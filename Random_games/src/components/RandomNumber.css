@@ -1,0 +1,84 @@
+/* RandomNumber.css */
+.wheel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  background-color: #001a66;
+  height: 100vh;
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+}
+
+.heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.number-input {
+    background-color: gray;
+    color: #001a66;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  width: 80px;
+  border-radius: 6px;
+  border: none;
+  text-align: center;
+}
+
+.wheel {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid white;
+  transition: transform 3s ease-out;
+  overflow: hidden;
+}
+
+.segment {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 50%;
+  transform-origin: 0% 100%;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.number {
+  transform-origin: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.pointer {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.spin-btn {
+  padding: 12px 24px;
+  background: #cc00ff;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 0 10px #cc00ff;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #4fff5c;
+}
+

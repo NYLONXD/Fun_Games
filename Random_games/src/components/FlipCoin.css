@@ -1,0 +1,70 @@
+@keyframes cloudMove1 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100vw); }
+}
+
+@keyframes cloudMove2 {
+  0% { transform: translateX(100vw); }
+  100% { transform: translateX(-100vw); }
+}
+
+@keyframes cloudMove3 {
+  0% { transform: translateX(-100vw); }
+  100% { transform: translateX(100vw); }
+}
+
+.animate-cloudMove1 {
+  animation: cloudMove1 60s linear infinite;
+}
+
+.animate-cloudMove2 {
+  animation: cloudMove2 90s linear infinite;
+}
+
+.animate-cloudMove3 {
+  animation: cloudMove3 75s linear infinite;
+}
+@keyframes cloudMove1 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100px); }
+}
+
+.animate-cloudMove1 {
+  animation: cloudMove1 30s linear infinite alternate;
+}
+/* Define animate-cloudMove2 and cloudMove3 similarly */
+.coin-container {
+  text-align: center;
+  color: white;
+  background-color: #001a70;
+  min-height: 100vh;
+  padding-top: 30px;
+}
+
+.coin-img {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  transition: transform 1.5s ease-in-out;
+}
+
+.coin-img.animate {
+  transform: rotateY(720deg);
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 25px;
+  margin: 10px;
+  background: linear-gradient(to right, #f9d423, #ff4e50);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.result span {
+  color: #ffe600;
+  font-weight: bold;
+}
