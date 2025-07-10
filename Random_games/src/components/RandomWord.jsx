@@ -5,7 +5,7 @@ const RandomWordGenerator = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   
-  const API_KEY = "YOUR_API_KEY_HERE"; // 🔑 Replace with your actual key
+  const API_KEY = "nlp1z24r2wt1e5fmdw92ruyq0s53hlxz80sdmig3b4trn7vdz"; // 🔑 Replace with your actual key
 
   const fetchWord = async () => {
     setLoading(true);
